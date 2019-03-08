@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap (WIP)</title>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
+<link rel='stylesheet' href='https://cdn.linearicons.com/free/1.0.0/icon-font.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lily+Script+One|Raleway:700|Rubik:400,500,700'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <header class="header fixed-top">
+	<div class="container">
+		<nav class="navbar navbar-expand-sm">
+			<a class="navbar-brand logoTop upper" href="#">ms<span class="overlapLogoTop">Minimal Shop</span></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<div class="navContentCenter">
+					<ul class="navbar-nav">
+						<li class="nav-item active">
+							<a class="nav-link upper" href="#">Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link upper" href="#">About</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle upper" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog<span class="navPlus">   +</span></a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								<a class="dropdown-item upper" href="#">Blog Fullwidth</a>
+								<a class="dropdown-item upper" href="#">Blog Masonry</a>
+								<a class="dropdown-item upper" href="#">Blog Sidebar</a>
+								<a class="dropdown-item upper" href="#">Post Fullwidth</a>
+								<a class="dropdown-item upper" href="#">Post Sidebar</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle upper" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop<span class="navPlus">   +</span></a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								<a class="dropdown-item upper" href="#">Full Width</a>
+								<a class="dropdown-item upper" href="#">Right Sidebar</a>
+								<a class="dropdown-item upper" href="#">Left Sidebar</a>
+								<a class="dropdown-item upper" href="#">Masonry</a>
+								<a class="dropdown-item upper" href="#">Single Product</a>
+								<a class="dropdown-item upper" href="#">Single Product 2</a>
+								<a class="dropdown-item upper" href="#">Single Product 3</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle upper" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages<span class="navPlus">   +</span></a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								<a class="dropdown-item upper" href="#">FAQ</a>
+								<a class="dropdown-item upper" href="#">Shopping Cart</a>
+								<a class="dropdown-item upper" href="#">Login / Register</a>
+								<a class="dropdown-item upper" href="#">My Account</a>
+								<a class="dropdown-item upper" href="#">Checkout</a>
+								<a class="dropdown-item upper" href="#">404 Page</a>
+								<a class="dropdown-item upper" href="#">Components</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link upper" href="#">Contact</a>
+						</li>
+					</ul>
+				</div>
+				<div class="navContentRight">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fas fa-user"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+</header>
+
+
+
+<div class="jumbotron">
+	<div class="container banner">
+		<div class="row justify-content-center">
+			<div class="col-md-6 ">
+				<div class="banner-border">
+					<div class="banner-content">
+						<h1>Minimal Shop</h1>
+						<p>Minimal Fashion Shop</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="features">
+	<div class="container">
+		<div class="row bgUltraLightGray">
+			<div class="col-md-4 bgLightGray featuresContent">
+				<span class="lnr lnr-gift"></span>
+				<h3 class="upper">Free Shipping</h3>
+				<p>Free worldwide shipping</p>
+			</div>
+			<div class="col-md-4 bgGray featuresContent">
+				<span class="lnr lnr-clock"></span>
+				<h3 class="upper">Fast Delivery</h3>
+				<p>Fast worldwide deliver</p>
+			</div>
+			<div class="col-md-4 bgLightGray featuresContent">
+				<span class="lnr lnr-exit"></span>
+				<h3 class="upper">Money Back</h3>
+				<p>30 days money back</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="collections bgUltraLightGray upper">
+	<div class="container">
+		<div class="row collectionsRowLeft">
+			<div class="col-md-6">
+				<div class="collectionsLgImg">
+					<div class="collectionsContent">
+						<h4 class="ffBlock">New Style for Winter</h4>
+						<a href="#" class="collectionsButton">Shop Now</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="row collectionsRowTop">
+					<div class="col-md-12">
+						<div class="collectionsMdImg">
+							<div class="collectionsContent">
+								<h5 class="ffBlock">New City Style for Women</h5>
+								<a href="#" class="collectionsButton">Shop Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row collectionsRowBottom">
+					<div class="col-sm-6">
+						<div class="collectionsSmImgLeft">
+							<div class="collectionsContent">
+								<h6 class="ffBlock">Shop for Accessories</h6>
+								<a href="#" class="collectionsButton">Shop Now</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="collectionsSmImgRight">
+							<div class="collectionsContent">
+								<h6 class="ffBlock">Workout In Style</h6>
+								<a href="#" class="collectionsButton">Shop Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>
+
+<div class="products">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 productsIntro">
+				<h2 class="upper introHeading">Latest Products</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="productsImgOne">
+					<p class="ffSimple bgLightGray productsPricing">$49</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="productsImgTwo">
+					<p class="ffSimple bgLightGray productsPricing"><span class="productsStrike">$159</span> $79</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="productsImgThree">
+					<p class="ffSimple bgLightGray productsPricing">$39</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="productsImgFour">
+					<p class="ffSimple bgLightGray productsPricing">$189</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="productsImgFive">
+					<p class="ffSimple bgLightGray productsPricing">$69</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="productsImgSix">
+					<p class="ffSimple bgLightGray productsPricing">$359</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="blog bgLightGray">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 blogIntro">
+				<h2 class=" upper introHeading">Latest Posts</h2>
+				<p class="blogIntroText">Thundercats flannel humblebrag, raclette four loko poke poutine typewriter retro tofu brunch green juice waistcoat.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card">
+					<img class="card-img-top" src="https://images.unsplash.com/photo-1473022082832-5a30701d4f2c?ixlib=rb-0.3.5&s=190668189cfc9945ebd368a774a48628&auto=format&fit=crop&w=2250&q=80">
+					<div class="card-body">
+						<h5 class="card-title upper">Single Post</h5>
+						<h6 class="card-subtitle upper">Aug 16, 2016</h6>
+						<p class="card-text">Vegan asymmetrical irony cornhole hexagon tofu kinfolk thundercats +1 poutine lumbersexual crucifix...</p>
+						<hr>
+						<a href="#" class="btn btn-link upper blogButton">Read More</a>
+						<a href="#" class="card-link"><span class="lnr lnr-thumbs-up blogIcon"></span></a>
+						<a href="#" class="card-link"><span class="lnr lnr-bubble blogIcon"></span></a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-4">
+				<div class="card">
+					<img class="card-img-top" src="https://images.unsplash.com/photo-1500068015788-f677c0108ff6?ixlib=rb-0.3.5&s=76d21268ff037d4548f3bc0ea0a69885&auto=format&fit=crop&w=2250&q=80">
+					<div class="card-body">
+						<h5 class="card-title upper">Fullwidth Post</h5>
+						<h6 class="card-subtitle upper">Aug 16, 2016</h6>
+						<p class="card-text">Vegan asymmetrical irony cornhole hexagon tofu kinfolk thundercats +1 poutine lumbersexual crucifix...</p>
+						<hr>
+						<a href="#" class="btn btn-link upper blogButton">Read More</a>
+						<a href="#" class="card-link"><span class="lnr lnr-thumbs-up blogIcon"></span></a>
+						<a href="#" class="card-link"><span class="lnr lnr-bubble blogIcon"></span></a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-4">
+				<div class="card">
+					<img class="card-img-top" src="https://images.unsplash.com/photo-1490773996481-9ff25c7d9484?ixlib=rb-0.3.5&s=72bac61a0b59fc7101fbac03999271b1&auto=format&fit=crop&w=2250&q=80">
+					<div class="card-body">
+						<h5 class="card-title upper">Post With Sidebar</h5>
+						<h6 class="card-subtitle upper">Aug 16, 2016</h6>
+						<p class="card-text">Vegan asymmetrical irony cornhole hexagon tofu kinfolk thundercats +1 poutine lumbersexual crucifix...</p>
+						<hr>
+						<a href="#" class="btn btn-link upper blogButton">Read More</a>
+						<a href="#" class="card-link"><span class="lnr lnr-thumbs-up blogIcon"></span></a>
+						<a href="#" class="card-link"><span class="lnr lnr-bubble blogIcon"></span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="brandsSlider">
+	<div class="container">
+		<div class="brandsSliderContainer">
+			<div class="brand"><span class="lnr lnr-magic-wand"></span></div>
+			<div class="brand"><span class="lnr lnr-drop"></span></div>
+			<div class="brand"><span class="lnr lnr-heart"></span></div>
+			<div class="brand"><span class="lnr lnr-star"></span></div>
+			<div class="brand"><span class="lnr lnr-music-note"></span></div>
+			<div class="brand"><span class="lnr lnr-camera"></span></div>
+			<div class="brand"><span class="lnr lnr-moon"></span></div>
+			<div class="brand"><span class="lnr lnr-diamond"></span></div>
+			<div class="brand"><span class="lnr lnr-leaf"></span></div>
+			<div class="brand"><span class="lnr lnr-paw"></span></div>
+		</div>
+	</div>
+</div>
+
+<div class="footer bgLightGray">
+	<div class="container">
+		<div class="footerNav">
+			<div class="row">
+				<div class="col-lg-4 col-sm-6">
+					<h2 class="logo upper">ms<span class="overlapLogo">Minimal Shop</span></h2>
+					<p class="footerContent">Neutra sustainable banjo, bespoke heirloom XOXO austin prism yr. Ramps trust fund selvage, tbh mustache four loko narwhal master cleanse pug beard kickstarter shaman.</p>
+				</div>
+				<div class="col-lg-2 col-sm-6">
+					<h2 class="footerHeading upper"><span class="camelUnderline">Br</span>ands</h2>
+					
+					<ul class="footerList footerListCamel">
+						<li><a href="#">Brand 1</a></li>
+						<li><a href="#">Brand 2</a></li>
+						<li><a href="#">Brand 3</a></li>
+						<li><a href="#">Brand 4</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-sm-6">
+					<h2 class="footerHeading upper"><span class="camelUnderline">Su</span>pport</h2>
+					<ul class="footerList footerListCamel">
+						<li><a href="#">Terms & Conditions</a></li>
+						<li><a href="#">Shipping & Returns</a></li>
+						<li><a href="#">F.A.Q</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<h2 class="footerHeading upper"><span class="camelUnderline">Co</span>ntact</h2>
+					<ul class="footerList">
+						<li>
+							<span class="lnr lnr-map-marker footerContactOnyx"></span>
+							<span class="footerContactContent footerContactOnyx">Miami, S Miami Ave, SW 20th, Store No.1</span>
+						</li>
+						
+						<li>
+							<a href="#" class="footerContactCamel">
+								<span class="lnr lnr-phone-handset"></span>
+								<span class="footerContactContent">+0123 456 789</span>
+							</a>
+						</li>
+						
+						<li>
+							<a href="#" class="footerContactCamel">
+								<span class="lnr lnr-envelope"></span>
+								<span class="footerContactContent">office@yoursite.com</span>
+							</a>
+						</li>
+						
+						<li>
+							<span class="lnr lnr-thumbs-up footerContactOnyx footer-thumbs-up"></span>
+							<span class="footerContactContent">
+								<a href="#" class="footerContactSocial"><i class="fab fa-facebook-f"></i></a>
+								<a href="#" class="footerContactSocial"><i class="fab fa-twitter"></i></a>
+								<a href="#" class="footerContactSocial"><i class="fab fa-google-plus-g"></i></a>
+								<a href="#" class="footerContactSocial"><i class="fab fa-linkedin-in"></i></a>
+								<a href="#" class="footerContactSocial"><i class="fab fa-pinterest"></i></a>
+							</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="copyrightSection">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<p class="upper copyrightContent">&copy MS - Minimal Shop Theme</p>
+			</div>
+			<div class="col-sm-6">
+				<div class="copyrightListContainer">
+					<ul class="copyrightList">
+						<li><img src="http://1000logos.net/wp-content/uploads/2017/06/VISA-symbol.jpg" class="copyrightImg" /></li>
+						<li><img src="https://seeklogo.com/images/M/MasterCard-logo-4C5D228602-seeklogo.com.png" class="copyrightImg" /></li>
+						<li><img src="https://playslots4realmoney.com/wp-content/uploads/2018/01/discover-card-casino.jpg" class="copyrightImg" /></li>
+						<li><img src="http://1000logos.net/wp-content/uploads/2017/05/symbol-Paypal.png" class="copyrightImg"/></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js'></script>
+
+  
+
+    <script src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
