@@ -58,6 +58,12 @@ html {
 
 .header {
 	background: white;
+
+	.container {
+		@media (min-width: 576px) {
+			max-width: 100%;
+		}
+ 	}
 }
 
 nav.navbar {
@@ -65,9 +71,24 @@ nav.navbar {
 	padding: 15px 0;
 }
 
+.navbar-toggler {
+	padding: 0;
+}
 
 .navbar-toggler-icon {
-	background: $onyx;	
+	color: $onyx;	
+	font-size: 2rem;
+}
+
+.navbar-expand-sm {
+
+	.navbar-nav {
+
+		.nav-link {
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+	}
 }
 
 .logoTop {
@@ -86,6 +107,10 @@ nav.navbar {
 		left: 17px;
 		top: 17px;
 		letter-spacing: 0.025em;
+
+		@media (max-width: 576px) {
+			top: 30px;
+		}
 
 	}
 }
@@ -122,11 +147,19 @@ nav.navbar {
 .navbar-brand {
 	position: absolute;
 	left: 10px;
+
+	@media (max-width: 576px) {
+		position: static;
+	}
 }
 
 .navContentRight {
 	position: absolute;
 	right: 10px;
+
+	@media (max-width: 575px) {
+		display: none;
+	}
 }
 
 .navContentCenter {
@@ -137,19 +170,22 @@ nav.navbar {
 	
 .jumbotron {
 	background-image: url('https://images.unsplash.com/photo-1475180211507-ff4e120b98c1?ixlib=rb-0.3.5&s=b416e46e25db406d69e52a182ffe0974&auto=format&fit=crop&w=2252&q=80');
-	height: 100%;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+	height: 100%;
 	margin: 0;
 	border-radius: 0;
-	position: relative;
-	top: 30px;
+	display: flex;
+
+	@media (max-width: 575px) {
+		max-height: 750px;
+	}
 }
 
 .banner {
+	align-self: center;
 	text-align: center;
-	margin-top: 25%;
 	padding: 0;
 
 
@@ -186,6 +222,10 @@ nav.navbar {
 	border-top: 1px solid $gray;
 	border-bottom: 1px solid $gray;
 	padding: 50px 0;
+
+	@media (max-width: 575px) {
+		padding: 0;
+	}
 }
 
 .featuresContent {
@@ -222,12 +262,12 @@ nav.navbar {
 }
 
 .collectionsRowLeft {
-	height: 54vh;
+	height: 100%;
 }
 
 .collectionsRowTop,
 .collectionsRowBottom {
-	height: 25vh;
+	height: 100%;
 }
 
 .collectionsLgImg,
@@ -242,23 +282,24 @@ nav.navbar {
 }
 
 .collectionsLgImg {
-	height: 54vh;
+	height: 100%;
+	min-height: 250px;
 	background-image: url('https://images.unsplash.com/photo-1484329148740-e09e6c78c1e0?ixlib=rb-0.3.5&s=87b8a23856c35a05a6c99a9d15b3a9e7&auto=format&fit=crop&w=2252&q=80');
 }
 
 .collectionsMdImg {
-	height: 25vh;
+	height: 100%;
 	background-image: url('https://images.unsplash.com/photo-1478118196036-eccfe7e59a22?ixlib=rb-0.3.5&s=7efbc22db6ac5842720d4db36cc4198e&auto=format&fit=crop&w=2251&q=80');
 }
 
 .collectionsSmImgLeft {
-	height: 25vh;
+	height: 100%;
 	margin-top: 33px;
 	background-image: url('https://images.unsplash.com/photo-1477814670986-8d8dccc5640d?ixlib=rb-0.3.5&s=1bc713c7b866d94bbc19965a30f7878e&auto=format&fit=crop&w=2252&q=80');
 }
 
 .collectionsSmImgRight {
-	height: 25vh;
+	height: 100%;
 	margin-top: 33px;
 	background-image: url('https://images.unsplash.com/photo-1445384763658-0400939829cd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=70f3d56092e8b1863c8c3f6fa8e1b36a&auto=format&fit=crop&w=2250&q=80');
 }
@@ -603,4 +644,10 @@ nav.navbar {
 	float: right;
 	padding-left: 10px;
 	line-height: 30px;
+
+	@media (max-width: 575px) {
+		float: left;
+		padding-left: 0;
+		padding-right: 10px;
+	}
 }

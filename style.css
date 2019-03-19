@@ -1,0 +1,497 @@
+/* --fonts-- */
+/* --colors-- */
+/* ---font--- */
+/* -background- */
+* {
+  box-sizing: border-box; }
+
+body,
+html {
+  height: 100%; }
+
+.bgGray {
+  background-color: #EBEBEB; }
+
+.bgLightGray {
+  background-color: #F8F8F8; }
+
+.bgUltraLightGray {
+  background-color: #FEFEFE; }
+
+.upper {
+  text-transform: uppercase; }
+
+.ffCursive {
+  font-family: 'Lily Script One', cursive; }
+
+.ffSimple {
+  font-family: 'Rubik', sans-serif; }
+
+.ffBlock {
+  font-family: 'Raleway', sans-serif; }
+
+/* ----- Navigation Section ----- */
+.header {
+  background: white; }
+  @media (min-width: 576px) {
+    .header .container {
+      max-width: 100%; } }
+
+nav.navbar {
+  margin: 0;
+  padding: 15px 0; }
+
+.navbar-toggler {
+  padding: 0; }
+
+.navbar-toggler-icon {
+  color: #111111;
+  font-size: 2rem; }
+
+.navbar-expand-sm .navbar-nav .nav-link {
+  padding-left: 5px;
+  padding-right: 5px; }
+
+.logoTop {
+  font-family: "Lily Script One", cursive;
+  color: #CCCCCC;
+  letter-spacing: 0.05em;
+  font-size: 48px;
+  position: relative; }
+  .logoTop .overlapLogoTop {
+    font-family: "Rubik", sans-serif;
+    color: #111111;
+    font-size: 8px;
+    line-height: 48px;
+    position: absolute;
+    left: 17px;
+    top: 17px;
+    letter-spacing: 0.025em; }
+    @media (max-width: 576px) {
+      .logoTop .overlapLogoTop {
+        top: 30px; } }
+
+.logoTop:hover {
+  color: #CCCCCC; }
+
+.dropdown-toggle::after {
+  display: none; }
+
+.nav-link,
+.dropdown-item {
+  color: #111111;
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+  font-weight: 500; }
+
+.nav-link:hover {
+  color: #C29C70;
+  transition: 0.3s ease-in-out; }
+
+.navPlus {
+  color: #CCCCCC; }
+
+.active a {
+  color: #C29C70; }
+
+.navbar-brand {
+  position: absolute;
+  left: 10px; }
+  @media (max-width: 576px) {
+    .navbar-brand {
+      position: static; } }
+
+.navContentRight {
+  position: absolute;
+  right: 10px; }
+  @media (max-width: 575px) {
+    .navContentRight {
+      display: none; } }
+
+.navContentCenter {
+  margin: 0 auto; }
+
+/* ----- Banner Section ----- */
+.jumbotron {
+  background-image: url("https://images.unsplash.com/photo-1475180211507-ff4e120b98c1?ixlib=rb-0.3.5&s=b416e46e25db406d69e52a182ffe0974&auto=format&fit=crop&w=2252&q=80");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  margin: 0;
+  border-radius: 0;
+  display: flex; }
+  @media (max-width: 575px) {
+    .jumbotron {
+      max-height: 750px; } }
+
+.banner {
+  align-self: center;
+  text-align: center;
+  padding: 0; }
+  .banner h1 {
+    color: #C29C70;
+    font-family: "Lily Script One", cursive;
+    font-size: 24px; }
+  .banner p {
+    color: #666666;
+    font-family: "Rubik", sans-serif;
+    font-size: 14px; }
+
+.banner-border {
+  border: 2px solid rgba(255, 255, 255, 0.75);
+  border-radius: 7px; }
+
+.banner-content {
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 7px;
+  padding: 50px 25px;
+  margin: 10px; }
+
+/* ----- Features Section ----- */
+.features {
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+  border-top: 1px solid #EBEBEB;
+  border-bottom: 1px solid #EBEBEB;
+  padding: 50px 0; }
+  @media (max-width: 575px) {
+    .features {
+      padding: 0; } }
+
+.featuresContent {
+  padding: 25px; }
+  .featuresContent h3 {
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    margin: 20px 0 15px 0;
+    color: #111111; }
+  .featuresContent p {
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    margin-bottom: 0;
+    color: #666666; }
+
+.lnr-gift,
+.lnr-clock,
+.lnr-exit {
+  color: #C29C70;
+  font-size: 32px; }
+
+/* ----- Collections Section ----- */
+.collections {
+  padding: 50px 0;
+  color: #111111; }
+
+.collectionsRowLeft {
+  height: 100%; }
+
+.collectionsRowTop,
+.collectionsRowBottom {
+  height: 100%; }
+
+.collectionsLgImg,
+.collectionsMdImg,
+.collectionsSmImgLeft,
+.collectionsSmImgRight {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  clear: both;
+  position: relative; }
+
+.collectionsLgImg {
+  height: 100%;
+  min-height: 250px;
+  background-image: url("https://images.unsplash.com/photo-1484329148740-e09e6c78c1e0?ixlib=rb-0.3.5&s=87b8a23856c35a05a6c99a9d15b3a9e7&auto=format&fit=crop&w=2252&q=80"); }
+
+.collectionsMdImg {
+  height: 100%;
+  background-image: url("https://images.unsplash.com/photo-1478118196036-eccfe7e59a22?ixlib=rb-0.3.5&s=7efbc22db6ac5842720d4db36cc4198e&auto=format&fit=crop&w=2251&q=80"); }
+
+.collectionsSmImgLeft {
+  height: 100%;
+  margin-top: 33px;
+  background-image: url("https://images.unsplash.com/photo-1477814670986-8d8dccc5640d?ixlib=rb-0.3.5&s=1bc713c7b866d94bbc19965a30f7878e&auto=format&fit=crop&w=2252&q=80"); }
+
+.collectionsSmImgRight {
+  height: 100%;
+  margin-top: 33px;
+  background-image: url("https://images.unsplash.com/photo-1445384763658-0400939829cd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=70f3d56092e8b1863c8c3f6fa8e1b36a&auto=format&fit=crop&w=2250&q=80"); }
+
+.collectionsContent h4 {
+  font-size: 2rem; }
+
+.collectionsContent h5 {
+  font-size: 1.25rem; }
+
+.collectionsContent h6 {
+  font-size: 0.5rem; }
+
+.collectionsContent h4,
+.collectionsContent h5,
+.collectionsContent h6 {
+  max-width: 50%;
+  position: absolute;
+  display: inline-block;
+  top: 1rem;
+  right: 1rem;
+  margin: 0;
+  text-align: right; }
+
+.collectionsButton {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  display: inline-block;
+  color: #111111;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.75rem;
+  border: 2px solid #111111;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 3px; }
+
+.collectionsButton:hover {
+  text-decoration: none;
+  color: #111111; }
+
+/* ----- Products Section ----- */
+.products {
+  padding: 50px 0; }
+
+.productsIntro {
+  text-align: center; }
+  .productsIntro h2 {
+    padding-bottom: 50px; }
+
+.productsImgOne,
+.productsImgTwo,
+.productsImgThree,
+.productsImgFour,
+.productsImgFive,
+.productsImgSix {
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 10px; }
+
+.productsImgOne {
+  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/80/20/56/802056b9e4cddff03c57401e5079b378.jpg"); }
+
+.productsImgTwo {
+  background-image: url("https://cdnb.lystit.com/photos/9ad6-2014/07/28/asos-blue-ridley-high-waist-ultra-skinny-ankle-grazer-jeans-in-retro-acid-wash-with-raw-hem-skinny-jeans-product-1-22070716-3-272845411-normal.jpeg"); }
+
+.productsImgThree {
+  background-image: url("https://cdn.lookastic.com/grey-skinny-jeans/asos-super-skinny-jeans-in-mid-gray-original-34044.jpg"); }
+
+.productsImgFour {
+  background-image: url("https://images.asos-media.com/products/asos-smart-faux-suede-slim-belt-in-black/8076890-1-black?$XL$?$XXL$&wid=300&fmt=jpeg&qlt=80,0&op_sharpen=0&resMode=sharp2&op_usm=1,0.4,6,1&iccEmbed=0&printRes=72"); }
+
+.productsImgFive {
+  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/6a/6d/2b/6a6d2b0f2fb7ca1814fe44b01e13be78.jpg"); }
+
+.productsImgSix {
+  background-image: url("https://images.asos-media.com/products/asos-gift-set-with-watch-and-cufflinks-in-gold/8633591-1-brown?$XL$?$XXL$&wid=300&fmt=jpeg&qlt=80,0&op_sharpen=0&resMode=sharp2&op_usm=1,0.4,6,1&iccEmbed=0&printRes=72"); }
+
+.productsPricing {
+  color: #C29C70;
+  display: inline-block;
+  float: right;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 3px; }
+
+.productsStrike {
+  color: #666666;
+  text-decoration: line-through; }
+
+/* ----- Blog Section ----- */
+.blog {
+  padding: 60px 0; }
+
+.blogIntro {
+  text-align: center;
+  padding-bottom: 50px; }
+
+.introHeading {
+  font-weight: 700;
+  font-family: "Rubik", sans-serif;
+  font-size: 26px;
+  color: #111111;
+  letter-spacing: 0.10em; }
+
+.blogIntroText {
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  color: #666666;
+  padding-top: 10px; }
+
+.card {
+  margin-bottom: 20px; }
+
+.card-title {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  color: #111111;
+  font-size: 18px;
+  letter-spacing: 0.05em; }
+
+.card-subtitle {
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  color: #666666;
+  letter-spacing: 0.05em; }
+
+.card-text {
+  margin: 10px 0 20px 0;
+  font-family: "Rubik", sans-serif;
+  color: #666666;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.025em; }
+
+.blogButton {
+  color: #C29C70;
+  font-size: 12px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  line-height: 1;
+  padding-left: 0; }
+
+.blogButton:hover {
+  text-decoration: none;
+  color: #AD8B60; }
+
+.card-link {
+  clear: both; }
+
+.blogIcon {
+  float: right;
+  padding: 5px;
+  color: #111111;
+  font-size: 16px;
+  line-height: 1; }
+
+.blogIcon:hover {
+  color: #C29C70;
+  transition: all 0.2s ease-in-out;
+  transition-delay: initial; }
+
+/* ----- Brands Slider Section ----- */
+.brandsSlider {
+  padding: 60px 0;
+  background-color: #C29C70;
+  color: white;
+  font-size: 40px;
+  text-align: center; }
+
+/* ----- Footer Section ----- */
+.footer {
+  padding: 50px 0;
+  border-bottom: 1px solid #EBEBEB; }
+
+.logo {
+  font-family: "Lily Script One", cursive;
+  color: #C29C70;
+  letter-spacing: 0.05em;
+  font-size: 32px;
+  position: relative;
+  padding-bottom: 10px; }
+  .logo .overlapLogo {
+    font-family: "Rubik", sans-serif;
+    color: #111111;
+    font-size: 8px;
+    line-height: 32px;
+    position: absolute;
+    left: 10px;
+    top: 3px;
+    letter-spacing: 0.025em; }
+
+.footerContent {
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #666666;
+  letter-spacing: 0.05em; }
+
+.footerHeading {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700px;
+  font-size: 22px;
+  padding: 7px 0;
+  color: #111111;
+  letter-spacing: 0.1em; }
+
+.camelUnderline {
+  border-bottom: 2px solid #C29C70; }
+
+.footerListCamel {
+  font-family: "Rubik", sans-serif;
+  letter-spacing: 0.05em;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px; }
+  .footerListCamel a {
+    color: #C29C70;
+    text-decoration: none; }
+  .footerListCamel a:hover {
+    color: #AD8B60;
+    transition: 0.3s ease-in-out; }
+
+.footerContactOnyx {
+  color: #111111; }
+
+.footerContactCamel {
+  color: #C29C70; }
+
+.footerContactOnyx,
+.footerContactCamel {
+  font-size: 14px;
+  letter-spacing: 0.05em; }
+
+.footerContactSocial {
+  color: #C29C70;
+  padding-right: 10px; }
+
+.footerContactSocial:hover,
+.footerContactCamel:hover {
+  color: #AD8B60;
+  transition: 0.3s ease-in-out;
+  text-decoration: none; }
+
+.lnr-map-marker,
+.lnr-phone-handset,
+.lnr-envelope,
+.footer-thumbs-up {
+  font-size: 18px;
+  margin-right: 15px; }
+
+.footerList li {
+  padding-bottom: 5px; }
+
+/* ----- Copyright Section ----- */
+.copyrightSection {
+  padding: 30px 0; }
+
+.copyrightContent {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #666666;
+  letter-spacing: 0.05em;
+  line-height: 30px;
+  margin: 0; }
+
+.copyrightImg {
+  height: 14px;
+  float: right;
+  padding-left: 10px;
+  line-height: 30px; }
+  @media (max-width: 575px) {
+    .copyrightImg {
+      float: left;
+      padding-left: 0;
+      padding-right: 10px; } }
